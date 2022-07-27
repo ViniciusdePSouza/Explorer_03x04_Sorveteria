@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-titles: 'Staatliches', sans-serif;
+    --ff-pResponsive: 'Palanquin', sans-serif;
+    --ff-pDesktop: 'Roboto', sans-serif;
+
+    --fs-h1: 4rem;
+    --fs-h2-p: 2rem;
+
+    --main-background: #EFF1FF;
+    --tag-background: #FEEAFA;
+    --h1-background: #CBC0D3;
+    --header-background: #8E9AAF;
+    --text-color: #5C6981;
+    --footer-color: #4A4E69;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#intro {
+    min-height: 100vh;
+    background-color: var(--header-background)
+}
+
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3.2rem;
+}
+
+#intro a {
+    padding-top: 3.2rem;
+}
+
+#intro h1 {
+    font-family: var(--ff-titles);
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 3.4rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#h1-box {
+    width: 100%;
+
+    background-color: var(--h1-background);
+
+    padding: 3rem 0
+}
+
+#p-box {
+    padding: 0 5rem;
+    margin-bottom:12.5rem;
+
+    color: white;
+
+    font-family: var(--ff-pDesktop);
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+#products{
+    margin: 0 auto;
+    
+    min-height: 100vh;
+    max-width: 90%;
+
+    padding: 64px 0;
+}
