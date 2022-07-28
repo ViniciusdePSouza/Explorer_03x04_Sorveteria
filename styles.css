@@ -25,6 +25,8 @@
 body {
     display: grid;
     grid-template-columns: 1fr 2fr;
+
+    background-color: var(--main-background)
 }
 
 #intro {
@@ -171,7 +173,7 @@ footer a {
 }
 
 .ice-cream {
-    background-image: url(./src/images/ice-cream.jpg);
+    background-image: url(./src/images/casquinha.jpg);
     background-size: cover;
 
     background-position: 55% 25%;
@@ -193,10 +195,10 @@ footer a {
     color: var(--footer-color);
     background-color: var(--tag-background);
 
-    padding:0.5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
 
-    font-family: var( --ff-titles);
+    font-family: var(--ff-titles);
     font-size: var(--fs-h2-p);
 
     animation: spanright 700ms 350ms forwards;
@@ -225,5 +227,78 @@ footer a {
     100% {
         opacity: 1;
         transform: translateX(0)
+    }
+}
+
+@media (max-width: 950px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro {
+        min-height: 0;
+        background-color: var(--header-background)
+    }
+
+    #intro p {
+        display: block;
+        padding: 2rem 4.3rem 3.1rem 4.3rem
+    }
+
+    #p-box {
+        margin: 0;
+
+        background-color: var(--main-background);
+        color: var(--text-color);
+    }
+}
+
+@media (max-width: 450px) {
+    :root {
+        --fs-h2-p: 1.5rem;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro {
+        min-height: 0;
+        background-color: var(--header-background)
+    }
+
+    #intro p {
+        display: block;
+        padding: 2rem 4.3rem 3.1rem 4.3rem
+    }
+
+    #p-box {
+        margin: 0;
+
+        background-color: var(--main-background);
+        color: var(--text-color);
+    }
+
+
+    #products {
+        padding: 0 0 6.4rem 0;
+    }
+
+    #products .cards-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 5rem;
+
+        animation: cardsup 700ms;
+    }
+
+    #intro p {
+        font-size: var(--fs-h2-p) ;
     }
 }
